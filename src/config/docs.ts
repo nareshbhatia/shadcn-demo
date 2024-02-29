@@ -8,7 +8,7 @@ interface DocsConfig {
 export const mainNav = {
   components: {
     title: 'Components',
-    href: '/components/sonner',
+    href: '/components/accordion',
   },
 };
 
@@ -16,7 +16,7 @@ export const docsConfig: DocsConfig = {
   mainNav: [
     {
       title: 'Components',
-      href: '/components/sonner',
+      href: '/components/accordion',
     },
     {
       title: 'GitHub',
@@ -28,6 +28,11 @@ export const docsConfig: DocsConfig = {
     {
       title: 'Components',
       items: [
+        {
+          title: 'Accordion',
+          href: '/components/accordion',
+          items: [],
+        },
         {
           title: 'Sonner',
           href: '/components/sonner',

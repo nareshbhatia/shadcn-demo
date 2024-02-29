@@ -1,10 +1,14 @@
-import { DocHeader } from '@/components/doc-header';
+import { DocPath } from '@/components/doc-path';
+import { Heading1 } from '@/components/heading1';
 
 export default function SonnerDocs() {
   return (
-    <DocHeader
-      description="An opinionated toast component for React."
-      title="Sonner"
-    />
+    <>
+      <DocPath docTitle="Sonner" />
+      <Heading1
+        description="An opinionated toast component for React."
+        title="Sonner"
+      />
+    </>
   );
 }

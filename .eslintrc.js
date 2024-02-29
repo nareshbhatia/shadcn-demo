@@ -65,6 +65,11 @@ const baseCustomRules = {
   'sort-vars': 'off',
 };
 
+/*
+ * eslint-comments has no fixable rules, hence we don't have
+ * a commentsFixableRules section
+ */
+
 const commentsCustomRules = {
   'eslint-comments/no-unused-disable': 'error',
 };
@@ -158,6 +163,15 @@ const typescriptCustomRules = {
   '@typescript-eslint/switch-exhaustiveness-check': 'error',
 };
 
+/*
+ * eslint-plugin-tailwindcss does not list fixable rules explicitly,
+ * hence we don't have a tailwindcssFixableRules section
+ */
+
+const tailwindcssCustomRules = {
+  'tailwindcss/no-custom-classname': 'off',
+};
+
 module.exports = {
   overrides: [
     {
@@ -197,6 +211,7 @@ module.exports = {
         ...reactCustomRules,
         ...typescriptFixableRules,
         ...typescriptCustomRules,
+        ...tailwindcssCustomRules,
       },
       settings: {
         'import/resolver': {

@@ -1,5 +1,6 @@
 import { ThemeProvider } from '@/components/providers';
 import { SiteHeader } from '@/components/site-header';
+import { Toaster as DefaultToaster } from '@/components/ui/toaster';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <SiteHeader />
             <main className="flex-1">{children}</main>
           </div>
+          <DefaultToaster />
         </ThemeProvider>
       </body>
     </html>

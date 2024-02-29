@@ -12,14 +12,12 @@ export default function AccordionDocs() {
   return (
     <>
       <DocPath docTitle="Accordion" />
-
       <Heading1
         description="A vertically stacked set of interactive headings that each reveal a section of content."
         title="Accordion"
       />
 
       <Heading2>Example</Heading2>
-
       <Accordion className="w-full" collapsible type="single">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>

@@ -1,7 +1,6 @@
 export const siteConfig = {
   name: 'shadcn-demo',
-  // TODO: Fix
-  url: 'https://ui.shadcn.com',
+  url: 'https://shadcn-demo-theta.vercel.app/',
   // TODO: Fix
   ogImage: 'https://ui.shadcn.com/og.jpg',
   description: 'sample application to demonstrate Shadcn components',

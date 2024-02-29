@@ -1,6 +1,9 @@
 # Shadcn Demo
 
-A sample application to demonstrate Shadcn components.
+A sample application to demonstrate [shadcn/ui](https://ui.shadcn.com/)
+components.
+
+Live demo: https://shadcn-demo-theta.vercel.app/
 
 ## Getting Started
 

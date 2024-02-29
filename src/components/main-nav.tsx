@@ -1,5 +1,6 @@
 'use client';
 
+import { mainNav } from '@/config/docs';
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
@@ -19,22 +20,13 @@ export function MainNav() {
         <Link
           className={cn(
             'transition-colors hover:text-foreground/80',
-            pathname === '/docs' ? 'text-foreground' : 'text-foreground/60',
-          )}
-          href="/docs"
-        >
-          Docs
-        </Link>
-        <Link
-          className={cn(
-            'transition-colors hover:text-foreground/80',
-            pathname.startsWith('/docs/components')
+            pathname.startsWith('/components')
               ? 'text-foreground'
               : 'text-foreground/60',
           )}
-          href="/docs/components"
+          href={mainNav.components.href}
         >
-          Components
+          {mainNav.components.title}
         </Link>
         <Link
           className={cn(

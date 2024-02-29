@@ -4,7 +4,16 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+/*
+ * Load the fonts using next/font/google. For details, see
+ * https://nextjs.org/docs/pages/building-your-application/optimizing/fonts#with-tailwind-css
+ */
+// TODO: why is --font-family-sans sans variable not defined?
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-family-sans',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Shadcn Demo',
@@ -26,12 +35,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
           enableSystem
         >
-          {/* eslint-disable-next-line react/no-unknown-property */}
-          <div vaul-drawer-wrapper="">
-            <div className="relative flex min-h-screen flex-col bg-background">
-              <SiteHeader />
-              <main className="flex-1">{children}</main>
-            </div>
+          <div className="relative flex min-h-screen flex-col bg-background">
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
           </div>
         </ThemeProvider>
       </body>

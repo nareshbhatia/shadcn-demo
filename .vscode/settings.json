@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["clsx", "lucide", "shadcn", "tailwindcss", "vaul"],
+  "cSpell.words": ["clsx", "lucide", "shadcn", "sonner", "tailwindcss"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },

@@ -6,7 +6,7 @@ import {
   PageHeaderHeading,
 } from '@/components/page-header';
 import { buttonVariants } from '@/components/ui/button';
-import { mainNav } from '@/config/docs';
+import { mainNavConfig } from '@/config/main-nav';
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
@@ -21,7 +21,10 @@ export default function HomePage() {
           apps. Accessible. Customizable. Open Source.
         </PageHeaderDescription>
         <PageActions>
-          <Link className={cn(buttonVariants())} href={mainNav.components.href}>
+          <Link
+            className={cn(buttonVariants())}
+            href={mainNavConfig.components.href}
+          >
             Get Started
           </Link>
           <Link

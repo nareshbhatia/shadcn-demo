@@ -1,6 +1,6 @@
 'use client';
 
-import { mainNav } from '@/config/docs';
+import { mainNavConfig } from '@/config/main-nav';
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
@@ -24,9 +24,9 @@ export function MainNav() {
               ? 'text-foreground'
               : 'text-foreground/60',
           )}
-          href={mainNav.components.href}
+          href={mainNavConfig.components.href}
         >
-          {mainNav.components.title}
+          {mainNavConfig.components.title}
         </Link>
         <Link
           className={cn(

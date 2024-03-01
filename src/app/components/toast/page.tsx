@@ -7,9 +7,14 @@ import { Heading3 } from '@/components/heading3';
 import { Button } from '@/components/ui/button';
 import { ToastAction } from '@/components/ui/toast';
 import { useToast } from '@/components/ui/use-toast';
+import { findSidebarNavItem } from '@/config/sidebar-nav';
 
 export default function ToastDocs() {
   const { toast } = useToast();
+
+  const sidebarNavItem = findSidebarNavItem(['Components', 'Toast']);
+  const title = sidebarNavItem ? sidebarNavItem.title : 'Unknown';
+  const description = sidebarNavItem ? sidebarNavItem.description : 'Unknown';
 
   function handleClickSimple() {
     toast({
@@ -53,11 +58,8 @@ export default function ToastDocs() {
 
   return (
     <>
-      <DocPath docTitle="Sonner" />
-      <Heading1
-        description="A succinct message that is displayed temporarily."
-        title="Toast"
-      />
+      <DocPath docTitle={title} />
+      <Heading1 description={description} title={title} />
 
       <Heading2>Examples</Heading2>
 

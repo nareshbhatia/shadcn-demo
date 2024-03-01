@@ -7,15 +7,17 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { findSidebarNavItem } from '@/config/sidebar-nav';
 
 export default function AccordionDocs() {
+  const sidebarNavItem = findSidebarNavItem(['Components', 'Accordion']);
+  const title = sidebarNavItem ? sidebarNavItem.title : 'Unknown';
+  const description = sidebarNavItem ? sidebarNavItem.description : 'Unknown';
+
   return (
     <>
-      <DocPath docTitle="Accordion" />
-      <Heading1
-        description="A vertically stacked set of interactive headings that each reveal a section of content."
-        title="Accordion"
-      />
+      <DocPath docTitle={title} />
+      <Heading1 description={description} title={title} />
 
       <Heading2>Example</Heading2>
       <Accordion className="w-full" collapsible type="single">

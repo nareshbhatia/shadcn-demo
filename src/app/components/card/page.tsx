@@ -2,8 +2,8 @@ import { DocPath } from '@/components/doc-path';
 import { Heading1 } from '@/components/heading1';
 import { findSidebarNavItem } from '@/config/sidebar-nav';
 
-export default function SonnerDocs() {
-  const sidebarNavItem = findSidebarNavItem(['Components', 'Sonner']);
+export default function CardDocs() {
+  const sidebarNavItem = findSidebarNavItem(['Components', 'Card']);
   const title = sidebarNavItem ? sidebarNavItem.title : 'Unknown';
   const description = sidebarNavItem ? sidebarNavItem.description : 'Unknown';
 

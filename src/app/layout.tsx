@@ -1,5 +1,6 @@
 import { ThemeProvider } from '@/components/providers';
 import { SiteHeader } from '@/components/site-header';
+import { Toaster as SonnerToaster } from '@/components/ui/sonner';
 import { Toaster as DefaultToaster } from '@/components/ui/toaster';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <main className="flex-1">{children}</main>
           </div>
           <DefaultToaster />
+          <SonnerToaster expand richColors />
         </ThemeProvider>
       </body>
     </html>

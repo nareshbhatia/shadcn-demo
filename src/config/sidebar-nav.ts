@@ -37,6 +37,13 @@ export const sidebarNavConfig: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: 'Switch',
+        description:
+          'A control that allows the user to toggle between checked and not checked.',
+        href: '/components/switch',
+        items: [],
+      },
+      {
         title: 'Toast',
         description: 'A succinct message that is displayed temporarily.',
         href: '/components/toast',

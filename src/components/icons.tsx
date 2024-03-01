@@ -1,4 +1,4 @@
-import { ChevronRight, Moon, SunMedium } from 'lucide-react';
+import { BellRing, Check, ChevronRight, Moon, SunMedium } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export type Icon = LucideIcon;
@@ -6,6 +6,8 @@ export type Icon = LucideIcon;
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
+  bellRing: BellRing,
+  check: Check,
   chevronRight: ChevronRight,
   gitHub: (props: IconProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>

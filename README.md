@@ -5,6 +5,8 @@ components.
 
 Live demo: https://shadcn-demo-theta.vercel.app/
 
+![Screenshot](./assets/screenshot.png)
+
 ## Getting Started
 
 ### Development Build

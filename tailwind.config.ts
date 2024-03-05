@@ -13,7 +13,8 @@ const config = {
       },
     },
     fontFamily: {
-      sans: ['var(--font-family-sans)'],
+      sans: ['var(--font-inter)'],
+      mono: ['var(--font-roboto-mono)'],
     },
     extend: {
       colors: {

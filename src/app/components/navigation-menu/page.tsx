@@ -17,6 +17,7 @@ import {
 import { findSidebarNavItem } from '@/config/sidebar-nav';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import * as React from 'react';
 
 const ListItem = React.forwardRef<
@@ -44,6 +45,7 @@ const ListItem = React.forwardRef<
 ListItem.displayName = 'ListItem';
 
 export default function NavigationMenuDocs() {
+  const pathname = usePathname();
   const sidebarNavItem = findSidebarNavItem(['Components', 'Navigation Menu']);
   const title = sidebarNavItem ? sidebarNavItem.title : 'Unknown';
   const description = sidebarNavItem ? sidebarNavItem.description : 'Unknown';
@@ -64,28 +66,19 @@ export default function NavigationMenuDocs() {
       <Heading3>Flat</Heading3>
       <NavigationMenu>
         <NavigationMenuList>
-          <NavigationMenuItem>
-            <Link href="/components/navigation-menu" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Getting Started
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/components/navigation-menu" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Components
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/components/navigation-menu" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Documentation
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-          <NavigationMenuIndicator />
+          {components.map((component) => (
+            <NavigationMenuItem key={component.title}>
+              {/* eslint-disable-next-line @typescript-eslint/non-nullable-type-assertion-style */}
+              <Link href={component.href as string} legacyBehavior passHref>
+                <NavigationMenuLink
+                  active={pathname === component.href}
+                  className={navigationMenuTriggerStyle()}
+                >
+                  {component.title}
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+          ))}
         </NavigationMenuList>
       </NavigationMenu>
 
@@ -148,6 +141,7 @@ export default function NavigationMenuDocs() {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
+          <NavigationMenuIndicator />
         </NavigationMenuList>
       </NavigationMenu>
     </>

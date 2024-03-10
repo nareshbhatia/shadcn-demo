@@ -1,7 +1,7 @@
 'use client';
 
+import { Icons } from '@/icons';
 import { cn } from '@/lib/utils';
-import { GripVertical } from 'lucide-react';
 import * as ResizablePrimitive from 'react-resizable-panels';
 
 function ResizablePanelGroup({
@@ -38,7 +38,7 @@ function ResizableHandle({
     >
       {withHandle !== undefined ? (
         <div className="z-10 flex h-4 w-3 items-center justify-center rounded-sm border bg-border">
-          <GripVertical className="size-2.5" />
+          <Icons.gripVertical className="size-2.5" />
         </div>
       ) : undefined}
     </ResizablePrimitive.PanelResizeHandle>

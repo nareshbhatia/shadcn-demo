@@ -1,4 +1,3 @@
-import { Icons } from '@/components/icons';
 import {
   PageActions,
   PageHeader,
@@ -8,6 +7,7 @@ import {
 import { buttonVariants } from '@/components/ui/button';
 import { mainNavConfig } from '@/config/main-nav';
 import { siteConfig } from '@/config/site';
+import { Icons } from '@/icons';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 

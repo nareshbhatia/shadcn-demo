@@ -1,4 +1,34 @@
-import { BellRing, Check, ChevronRight, Moon, SunMedium } from 'lucide-react';
+import {
+  ArrowDown,
+  ArrowLeft,
+  ArrowRight,
+  ArrowUp,
+  ArrowUpDown,
+  BellRing,
+  Check,
+  CheckCircle,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  ChevronUp,
+  ChevronsLeft,
+  ChevronsRight,
+  ChevronsUpDown,
+  Circle,
+  GripVertical,
+  HelpCircle,
+  PlusCircle,
+  EyeOff,
+  Moon,
+  MoreHorizontal,
+  Search,
+  SlidersHorizontal,
+  Sliders,
+  SunMedium,
+  Timer,
+  X,
+  XCircle,
+} from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export type Icon = LucideIcon;
@@ -6,9 +36,23 @@ export type Icon = LucideIcon;
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
+  arrowDown: ArrowDown,
+  arrowLeft: ArrowLeft,
+  arrowRight: ArrowRight,
+  arrowUp: ArrowUp,
+  arrowUpDown: ArrowUpDown,
   bellRing: BellRing,
   check: Check,
+  checkCircle: CheckCircle,
+  chevronDown: ChevronDown,
+  chevronLeft: ChevronLeft,
   chevronRight: ChevronRight,
+  chevronUp: ChevronUp,
+  chevronsLeft: ChevronsLeft,
+  chevronsRight: ChevronsRight,
+  chevronsUpDown: ChevronsUpDown,
+  circle: Circle,
+  eyeOff: EyeOff,
   gitHub: (props: IconProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path
@@ -17,6 +61,16 @@ export const Icons = {
       />
     </svg>
   ),
+  gripVertical: GripVertical,
+  helpCircle: HelpCircle,
   moon: Moon,
+  moreHorizontal: MoreHorizontal,
+  plusCircle: PlusCircle,
+  search: Search,
+  slidersHorizontal: SlidersHorizontal,
+  slidersVertical: Sliders,
   sun: SunMedium,
+  timer: Timer,
+  x: X,
+  xCircle: XCircle,
 };

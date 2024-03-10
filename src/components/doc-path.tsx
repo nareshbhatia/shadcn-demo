@@ -1,4 +1,4 @@
-import { Icons } from '@/components/icons';
+import { Icons } from '@/icons';
 
 export interface DocPathProps {
   sectionTitle?: string;

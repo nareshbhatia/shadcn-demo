@@ -18,6 +18,12 @@ export const sidebarNavConfig: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: 'Data Table',
+        description: 'Powerful table and datagrids built using TanStack Table.',
+        href: '/components/data-table',
+        items: [],
+      },
+      {
         title: 'Navigation Menu',
         description: 'A collection of links for navigating websites.',
         href: '/components/navigation-menu',
@@ -41,6 +47,12 @@ export const sidebarNavConfig: SidebarNavItem[] = [
         description:
           'A control that allows the user to toggle between checked and not checked.',
         href: '/components/switch',
+        items: [],
+      },
+      {
+        title: 'Table',
+        description: 'A responsive table component.',
+        href: '/components/table',
         items: [],
       },
       {

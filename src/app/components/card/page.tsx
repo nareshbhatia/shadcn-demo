@@ -1,7 +1,6 @@
 import { DocPath } from '@/components/doc-path';
 import { Heading1 } from '@/components/heading1';
 import { Heading2 } from '@/components/heading2';
-import { Icons } from '@/components/icons';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -13,6 +12,7 @@ import {
 } from '@/components/ui/card';
 import { Switch } from '@/components/ui/switch';
 import { findSidebarNavItem } from '@/config/sidebar-nav';
+import { Icons } from '@/icons';
 import { cn } from '@/lib/utils';
 
 const notifications = [

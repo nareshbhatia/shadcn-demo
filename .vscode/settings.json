@@ -1,11 +1,13 @@
 {
   "cSpell.words": [
     "clsx",
+    "cmdk",
     "lucide",
     "roboto",
     "shadcn",
     "sonner",
-    "tailwindcss"
+    "tailwindcss",
+    "tanstack"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"

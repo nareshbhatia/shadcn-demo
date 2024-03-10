@@ -7,7 +7,6 @@ import { Heading3 } from '@/components/heading3';
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
@@ -141,7 +140,6 @@ export default function NavigationMenuDocs() {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          <NavigationMenuIndicator />
         </NavigationMenuList>
       </NavigationMenu>
     </>

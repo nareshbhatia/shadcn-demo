@@ -8,7 +8,7 @@ export function Heading2({ children }: Heading2Props) {
   return (
     <h2
       className={cn(
-        'mt-8 mb-2 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0',
+        'my-8 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0',
       )}
     >
       {children}

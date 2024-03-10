@@ -19,7 +19,7 @@ export default function ResizableDocs() {
       <Heading1 description={description} title={title} />
 
       <Heading2>Example</Heading2>
-      <div className="h-72 p-10">
+      <div className="h-72">
         <ResizablePanelGroup
           className="rounded-lg border"
           direction="horizontal"

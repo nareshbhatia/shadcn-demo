@@ -24,6 +24,12 @@ export const sidebarNavConfig: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: 'Form',
+        description: 'Building forms with React Hook Form and Zod.',
+        href: '/components/form',
+        items: [],
+      },
+      {
         title: 'Navigation Menu',
         description: 'A collection of links for navigating websites.',
         href: '/components/navigation-menu',

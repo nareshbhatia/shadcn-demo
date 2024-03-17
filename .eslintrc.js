@@ -152,6 +152,15 @@ const typescriptFixableRules = {
 };
 
 const typescriptCustomRules = {
+  // see https://github.com/orgs/react-hook-form/discussions/9325
+  '@typescript-eslint/no-misused-promises': [
+    'error',
+    {
+      checksVoidReturn: {
+        attributes: false,
+      },
+    },
+  ],
   '@typescript-eslint/no-unused-vars': [
     'error',
     { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },

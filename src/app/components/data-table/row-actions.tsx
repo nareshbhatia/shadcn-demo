@@ -32,7 +32,6 @@ export function RowActions<TData>({ row }: DataTableRowActionsProps<TData>) {
       <DropdownMenuContent align="end" className="w-[160px]">
         <DropdownMenuLabel>Actions</DropdownMenuLabel>
         <DropdownMenuItem
-          // eslint-disable-next-line @typescript-eslint/no-misused-promises
           onClick={async () => navigator.clipboard.writeText(payment.id)}
         >
           Copy payment ID

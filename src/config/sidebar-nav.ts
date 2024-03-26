@@ -36,6 +36,13 @@ export const sidebarNavConfig: SidebarNavItem[] = [
         items: [],
       },
       {
+        title: 'Popover',
+        description:
+          'Displays rich content in a portal, triggered by a button.',
+        href: '/components/popover',
+        items: [],
+      },
+      {
         title: 'Resizable',
         description:
           'Accessible resizable panel groups and layouts with keyboard support.',

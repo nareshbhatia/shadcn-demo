@@ -10,13 +10,11 @@ export function MainNav() {
   const pathname = usePathname();
 
   return (
-    <div className="mr-4 hidden md:flex">
-      <Link className="mr-6 flex items-center space-x-2" href="/">
-        <span className="hidden font-bold sm:inline-block">
-          {siteConfig.name}
-        </span>
+    <>
+      <Link className="flex items-center space-x-2" href="/">
+        <span className="font-bold">{siteConfig.name}</span>
       </Link>
-      <nav className="flex items-center gap-6 text-sm">
+      <nav className="hidden items-center gap-6 text-sm md:flex">
         <Link
           className={cn(
             'transition-colors hover:text-foreground/80',
@@ -30,13 +28,13 @@ export function MainNav() {
         </Link>
         <Link
           className={cn(
-            'hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block',
+            'text-foreground/60 transition-colors hover:text-foreground/80',
           )}
           href={siteConfig.links.github}
         >
           GitHub
         </Link>
       </nav>
-    </div>
+    </>
   );
 }

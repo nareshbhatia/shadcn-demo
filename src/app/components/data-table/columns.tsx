@@ -56,6 +56,8 @@ export const columns: ColumnDef<Payment>[] = [
         </div>
       );
     },
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
+    filterFn: (row, id, value) => value.includes(row.getValue(id)),
   },
   {
     accessorKey: 'email',

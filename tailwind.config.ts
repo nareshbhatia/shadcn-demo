@@ -2,8 +2,7 @@ import type { Config } from 'tailwindcss';
 
 const config = {
   darkMode: ['class'],
-  content: ['./src/**/*.{ts,tsx}'],
-  prefix: '',
+  content: ['./src/**/*.{js,jsx,ts,tsx,mdx}'],
   theme: {
     container: {
       center: true,
@@ -13,6 +12,10 @@ const config = {
       },
     },
     fontFamily: {
+      /*
+       * Customize the `sans` to font Inter
+       * Sets `font-family: var(--font-inter)` on the `html` element
+       */
       sans: ['var(--font-inter)'],
       mono: ['var(--font-roboto-mono)'],
     },

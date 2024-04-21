@@ -1,5 +1,5 @@
-import { MainNav } from '@/components/main-nav';
-import { ModeToggle } from '@/components/mode-toggle';
+import { MainNav } from './main-nav';
+import { ModeToggle } from './mode-toggle';
 
 export function SiteHeader() {
   return (

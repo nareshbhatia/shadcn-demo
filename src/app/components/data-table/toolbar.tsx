@@ -22,7 +22,6 @@ export function Toolbar<TData>({ table }: ToolbarProps<TData>) {
             table.getColumn('email')?.setFilterValue(event.target.value)
           }
           placeholder="Filter emails..."
-          // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
           value={(table.getColumn('email')?.getFilterValue() as string) ?? ''}
         />
         {table.getColumn('status') && (

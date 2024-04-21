@@ -1,6 +1,6 @@
 'use client';
 
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent } from './dialog';
 import { Icons } from '@/icons';
 import { cn } from '@/lib/utils';
 import type { DialogProps } from '@radix-ui/react-dialog';
@@ -40,7 +40,6 @@ const CommandInput = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive.Input>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Input>
 >(({ className, ...props }, ref) => (
-  // eslint-disable-next-line react/no-unknown-property
   <div className="flex items-center border-b px-3" cmdk-input-wrapper="">
     <Icons.search className="mr-2 size-4 shrink-0 opacity-50" />
     <CommandPrimitive.Input

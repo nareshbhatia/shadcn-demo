@@ -67,7 +67,6 @@ export default function NavigationMenuDocs() {
         <NavigationMenuList>
           {components.map((component) => (
             <NavigationMenuItem key={component.title}>
-              {/* eslint-disable-next-line @typescript-eslint/non-nullable-type-assertion-style */}
               <Link href={component.href as string} legacyBehavior passHref>
                 <NavigationMenuLink
                   active={pathname === component.href}

@@ -1,4 +1,4 @@
-import { DataTableColumnHeader } from './data-table-column-header';
+import { DataTableColumnHeader } from './_components/data-table-column-header';
 import { statusLookups } from './lookups';
 import type { Payment } from './models';
 import { RowActions } from './row-actions';

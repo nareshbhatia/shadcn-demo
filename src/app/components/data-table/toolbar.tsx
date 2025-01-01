@@ -1,5 +1,5 @@
-import { DataTableFacetedFilter } from './data-table-faceted-filter';
-import { DataTableViewOptions } from './data-table-view-options';
+import { DataTableFacetedFilter } from './_components/data-table-faceted-filter';
+import { DataTableViewOptions } from './_components/data-table-view-options';
 import { statusLookups } from './lookups';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';

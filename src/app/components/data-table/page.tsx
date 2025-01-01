@@ -1,9 +1,9 @@
 'use client';
 
 import { columns } from './columns';
-import { DataTable } from './data-table';
 import type { Payment } from './models';
 import { PaymentStatus } from './models';
+import { PaymentTable } from './payment-table';
 import { DocPath } from '@/components/doc-path';
 import { Heading1 } from '@/components/heading1';
 import { Heading2 } from '@/components/heading2';
@@ -43,7 +43,7 @@ export default function DataTableDocs() {
       </p>
 
       <Heading2>Example</Heading2>
-      <DataTable columns={columns} data={payments} />
+      <PaymentTable columns={columns} data={payments} />
     </>
   );
 }

@@ -18,7 +18,6 @@ import { Separator } from '@/components/ui/separator';
 import { Icons } from '@/icons';
 import { cn } from '@/lib/utils';
 import type { Column } from '@tanstack/react-table';
-import type * as React from 'react';
 
 interface DataTableFacetedFilterProps<TData, TValue> {
   column?: Column<TData, TValue>;
